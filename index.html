@@ -8,14 +8,22 @@
     <title>Javascript勉強</title>
     <script type="text/javascript" src="./js/clickRunButton.js"></script>
     <script type="text/javascript" src="./js/calculation.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div>
-        <input id="left_textbox" type="text" size="20">
-        <input id="right_textbox" type="text" size="20">
+        <input id="left_textbox" type="text" size="20"><br>
+        <label id="left_textbox_error" class="error">エラーテキスト</label>
+    </div>
+    <div>
+        <input id="right_textbox" type="text" size="20"><br>
+        <label id="right_textbox_error" class="error">エラーテキスト</label>
+    </div>
+    <div>
         <button id="run_btn" onclick="showResult()">実行</button>
     </div>
+
     <label id="result_label">ハローワールド</label>
 
 </body>
