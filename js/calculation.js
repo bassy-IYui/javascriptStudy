@@ -1,7 +1,16 @@
-function toMultiply(leftText, rightText) {
-    var total = 0;
-    var numLeft = parseFloat(leftText);
-    var numRight = parseFloat(rightText);
-    total = numLeft * numRight;
-    return total;
+//掛け算する
+function MultiplyNumber(leftText, rightText) {
+    var result = 0;
+    var Leftnum = parseFloat(leftText);
+    var Rightnum = parseFloat(rightText);
+    result = Leftnum * Rightnum;
+    result = separateThousandsResult(result);
+    return result;
+}
+
+//3桁区切りにする
+function separateThousandsResult(result) {
+    resultStr = result.toString();
+    while (resultStr != (resultStr = resultStr.replace(/^(-?\d+)(\d{3})/, "$1,$2")));
+    return resultStr;
 }

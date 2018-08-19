@@ -12,16 +12,18 @@
 </head>
 
 <body>
-    <div>
-        <input id="left_textbox" type="text" size="20"><br>
-        <label id="left_textbox_error" class="error">エラーテキスト</label>
-    </div>
-    <div>
-        <input id="right_textbox" type="text" size="20"><br>
-        <label id="right_textbox_error" class="error">エラーテキスト</label>
-    </div>
-    <div>
-        <button id="run_btn" onclick="showResult()">実行</button>
+    <div class="calculation_area">
+        <div id="left_textbox" class="left_textbox">
+            <input id="left_text" type="text" size="20"><br>
+            <label id="left_textbox_error" class="error">エラーテキスト</label>
+        </div>
+        <div id="right_textbox" class="right_textbox">
+            <input id="right_text" type="text" size="20"><br>
+            <label id="right_textbox_error" class="error">エラーテキスト</label>
+        </div>
+        <div>
+            <button id="run_btn" onclick="showResult()">実行</button>
+        </div>
     </div>
 
     <label id="result_label">ハローワールド</label>

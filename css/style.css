@@ -1,3 +1,16 @@
+.calculation_area {
+    display: flex;
+}
+
 .error {
     color: red;
+    display: none;
+}
+
+.left_textbox {
+    margin-right: 20px;
+}
+
+.right_textbox {
+    margin-right: 20px;
 }
