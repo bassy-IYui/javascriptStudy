@@ -1,12 +1,13 @@
    function showResult() {
        var leftText = document.getElementById("left_text").value;
        var rightText = document.getElementById("right_text").value;
+       document.getElementById("result_label").innerText = "lt's \"my\" answer";
 
        if (isNumber("left_textbox_error", leftText)) {
            if (isNumber("right_textbox_error", rightText)) {
                var result = MultiplyNumber(leftText, rightText);
                document.getElementById("right_textbox_error").style.display = "none";
-               document.getElementById("result_label").innerText = result;
+               document.getElementById("result_multiplication").innerText = result;
            }
            document.getElementById("left_textbox_error").style.display = "none";
        } else if (!isNumber("left_textbox_error", leftText)) {
