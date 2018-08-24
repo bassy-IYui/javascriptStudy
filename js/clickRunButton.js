@@ -7,9 +7,9 @@
        } else {
            document.getElementById("result_label").innerText = "数字を入力してください"
        }
+   }
 
-       function isNumber(numVal) {
-           var pattern = /^[-+]?([1-9]\d*|0)(\.\d+)?$/;
-           return pattern.test(numVal);
-       }
+   function isNumber(numVal) {
+       var pattern = /^[-+]?([1-9]\d*|0)(\.\d+)?$/;
+       return pattern.test(numVal);
    }
