@@ -2,8 +2,8 @@
        var leftText = document.getElementById("left_textbox").value;
        var rightText = document.getElementById("right_textbox").value;
        if (isNumber(leftText) && isNumber(rightText)) {
-           var total = toMultiply(leftText, rightText);
-           document.getElementById("result_label").innerText = total;
+           var result = MultiplyNumber(leftText, rightText);
+           document.getElementById("result_label").innerText = result;
        } else {
            document.getElementById("result_label").innerText = "数字を入力してください"
        }
