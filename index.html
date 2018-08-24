@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript勉強</title>
+    <script type="text/javascript" src="./js/clickRunButton.js"></script>
+    <script type="text/javascript" src="./js/calculation.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="calculation_area">
+        <div id="left_textbox" class="left_textbox">
+            <input id="left_text" type="text" size="20"><br>
+            <label id="left_textbox_error" class="error">エラーテキスト</label>
+        </div>
+        <div id="right_textbox" class="right_textbox">
+            <input id="right_text" type="text" size="20"><br>
+            <label id="right_textbox_error" class="error">エラーテキスト</label>
+        </div>
+        <div>
+            <button id="run_btn" onclick="showResult()">実行</button>
+        </div>
+    </div>
+
+    <label id="result_label">ハローワールド</label>
+
+</body>
+
+</html>
