@@ -2,7 +2,7 @@
        var leftText = document.getElementById("left_textbox").value;
        var rightText = document.getElementById("right_textbox").value;
        if (isNumber(leftText) && isNumber(rightText)) {
-           var result = MultiplyNumber(leftText, rightText);
+           var result = multiplyNumber(leftText, rightText);
            document.getElementById("result_label").innerText = result;
        } else {
            document.getElementById("result_label").innerText = "数字を入力してください"
