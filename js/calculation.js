@@ -1,5 +1,5 @@
 //掛け算する
-function MultiplyNumber(leftText, rightText) {
+function multiplyNumber(leftText, rightText) {
     var result = 0;
     var Leftnum = parseFloat(leftText);
     var Rightnum = parseFloat(rightText);

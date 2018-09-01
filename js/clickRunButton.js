@@ -5,7 +5,7 @@
 
        if (isNumber("left_textbox_error", leftText)) {
            if (isNumber("right_textbox_error", rightText)) {
-               var result = MultiplyNumber(leftText, rightText);
+               var result = multiplyNumber(leftText, rightText);
                document.getElementById("right_textbox_error").style.display = "none";
                document.getElementById("result_multiplication").innerText = result;
            }
