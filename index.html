@@ -8,6 +8,7 @@
     <title>Javascript勉強</title>
     <script type="text/javascript" src="./js/clickRunButton.js"></script>
     <script type="text/javascript" src="./js/calculation.js"></script>
+    <script type="text/javascript" src="./js/calculationTime.js"></script>
     <script type="text/javascript" src="./js/sort.js"></script>
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -40,6 +41,18 @@
         <label>素数昇順:</label>
         <label id="result_sort_prime_text"></label>
     </div>
+
+    <input id="date_text" type="text" size="40">
+    <button onclick="calculation_time()">時間計算</button>
+    <div>
+        <label>10日後の日付と曜日：</label>
+        <label id="ten_days_later"></label>
+    </div>
+    <div>
+        <label>31日後の日付と曜日：</label>
+        <label id="thirty_one_days_later"></label>
+    </div>
+
 
 </body>
 
